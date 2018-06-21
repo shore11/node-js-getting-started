@@ -87,10 +87,11 @@ express()
         } else {
           price = map.get(weight);
         }
+      break;
     }
     console.log(price);
        
+    var param = {result: price, fweight: weight, ftype: type};
 
-
-    res.render('pages/results');
+    res.render('pages/results', param);
   }
