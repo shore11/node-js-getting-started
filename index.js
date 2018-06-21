@@ -66,6 +66,7 @@ express()
         } else {
           price = map.get(weight);
         }
+        type = 'Letters (Stamped)';
       break;
       case 'letterm':
         if(weight > 3.5){
@@ -73,6 +74,7 @@ express()
         } else {
           price = map2.get(weight);
         }
+        type = 'Letters (Metered)';
       break;
       case 'largeEnvelopes':
         if(weight > 13){
@@ -80,6 +82,7 @@ express()
         } else {
           price = map3.get(weight);
         }
+        type = 'Large Envelopes (flats)';
       break;
       case 'firstClass':
         if(weight > 13) {
@@ -87,6 +90,7 @@ express()
         } else {
           price = map.get(weight);
         }
+        type = 'First-Class Package Service-Retail';
       break;
     }
     console.log(price);
