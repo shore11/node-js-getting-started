@@ -88,7 +88,7 @@ express()
         if(weight > 13) {
           price = 6.00
         } else {
-          price = map.get(weight);
+          price = map4.get(weight);
         }
         type = 'First-Class Package Service-Retail';
       break;
